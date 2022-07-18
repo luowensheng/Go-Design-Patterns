@@ -1,12 +1,19 @@
 package main
 
 import (
+	"fmt"
 	"strconv"
 	"sync"
+
 	"github.com/luowensheng/design_patterns/singleton"
 )
 
 func viewSingleton(){
+	
+	fmt.Println("_________________________________\n") 	
+
+    fmt.Println("Starting Singleton") 	
+    fmt.Println("_________________________________\n") 	
 	
 	var logger = singleton.GetLoggerInstance()
 	logger.SetLogLevel(1)

@@ -1,11 +1,18 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/luowensheng/design_patterns/adapter"
 )
 
 func viewAdapter() {
 
+	fmt.Println("_________________________________\n") 	
+
+    fmt.Println("Starting Adapter") 	
+    fmt.Println("_________________________________\n") 	
+	
 	tvs := []adapter.Televison{
 		&adapter.SonheeTV{},
 		&adapter.SammysangTVAdapter{},

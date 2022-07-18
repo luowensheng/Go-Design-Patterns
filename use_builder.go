@@ -8,6 +8,11 @@ import (
 
 func viewBuilder(){
 	
+	fmt.Println("_________________________________\n") 	
+
+    fmt.Println("Starting Builder") 	
+    fmt.Println("_________________________________\n") 	
+
 	var nb = builder.NewNotificationBuilder()
     
 	nb.SetTitle("New Notification")
@@ -15,7 +20,7 @@ func viewBuilder(){
 	nb.SetIcon("icon.png")
 	nb.SetSubTitle("icon")
 	nb.SetImage("image.png")
-	nb.SetPriority(10)
+	nb.SetPriority(2)
 	nb.SetNotType("already")
 
 
